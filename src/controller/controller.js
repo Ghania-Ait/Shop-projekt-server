@@ -32,3 +32,7 @@ export const postRecords=(req,res)=>{
 export const getTop10=(req, res) => {
     res.send('Not yet implemented');
 }
+
+export const getUsers=(req,res)=>{
+    res.send('users get request')
+}
