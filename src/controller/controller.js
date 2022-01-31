@@ -28,3 +28,7 @@ export const postRecords=(req,res)=>{
  db.write();
  res.send(record);
 }
+
+export const getTop10=(req, res) => {
+    res.send('Not yet implemented');
+}
