@@ -1,14 +1,17 @@
 import  express  from "express";
-import {getRecords,postRecords } from './src/controller/controller.js'
+import recordsRoutes from './routes/Records.route.js' 
+
+
+
 const app=express();
-
-
-app.get('/records', getRecords);
-
-app.post('/records',postRecords);
-
-
 const port=5000;
+app.use(express.json());
+app.use(recordsRoutes);
+
+
+
+
+
 app.listen(port, ()=>{
-    console.log('The Server is listning... ');
+    console.log('The Server is listening... ');
 }) 

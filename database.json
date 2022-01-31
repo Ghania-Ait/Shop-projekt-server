@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "title": "Egal",
+      "artist": "DJ Egal",
+      "year": "2015",
+      "cover": "",
+      "price": 5.5
+    },
+    {
+      "title": "just go",
+      "artist": "Lola",
+      "year": "1999",
+      "price": "10",
+      "cover": ""
+    },
+    {
+      "title": "just go",
+      "artist": "Lola",
+      "year": "1999",
+      "price": "18",
+      "cover": ""
+    },
+    {
+      "title": "just go",
+      "artist": "Lola",
+      "year": "1999",
+      "price": "18",
+      "cover": ""
+    }
+  ]
+}

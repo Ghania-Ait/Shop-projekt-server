@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "nodemonConfig": {
+    "ignore": ["database.json", "logs.json"]
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
