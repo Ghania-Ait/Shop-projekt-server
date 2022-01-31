@@ -25,4 +25,4 @@ Most applications made for the web have to do with some sort of data manipulatio
 2. Using `lowdb` set up a mock database for our records. It can be empty or it can contain already some fake data. Update the routes above so that they work just like they should.
 
    - `api/records` -> should return all the records that are in our lowdb database
-   - `api/records` -> should add a new record to our lowdb database
+   - `api/records` -> should add a new record to our lowdb database# Shop-projekt
