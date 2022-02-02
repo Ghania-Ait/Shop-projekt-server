@@ -26,3 +26,6 @@ Most applications made for the web have to do with some sort of data manipulatio
 
    - `api/records` -> should return all the records that are in our lowdb database
    - `api/records` -> should add a new record to our lowdb database# Shop-projekt
+
+
+----------------------------------------------------------------
