@@ -1,31 +1,40 @@
 {
   "records": [
     {
-      "title": "Egal",
-      "artist": "DJ Egal",
-      "year": "2015",
-      "cover": "",
-      "price": 5.5
+      "title": "Paper Mache Gream Balloon",
+      "artist": "King Gizzard And The Lizard Wizard",
+      "year": "2020",
+      "price": "67.99"
     },
     {
-      "title": "just go",
-      "artist": "Lola",
-      "year": "1999",
-      "price": "10",
-      "cover": ""
+      "title": "All things must pass",
+      "artist": "George Harrison",
+      "year": "1998",
+      "price": "325"
     },
     {
-      "title": "just go",
-      "artist": "Lola",
-      "year": "1999",
-      "price": "18",
-      "cover": ""
+      "title": "Hurry Up, we are dreaming",
+      "artist": "M83",
+      "year": "2019",
+      "price": "80.54"
     },
     {
-      "title": "just go",
-      "artist": "Lola",
+      "title": "Inside the Song",
+      "artist": "BO Burnham",
+      "year": "2014",
+      "price": "100.25"
+    },
+    {
+      "title": "Discovery",
+      "artist": "Daft Punk",
       "year": "1999",
-      "price": "18",
+      "price": "215"
+    },
+    {
+      "title": "new artist",
+      "artist": "joe",
+      "year": "2019",
+      "price": "25",
       "cover": ""
     }
   ]
