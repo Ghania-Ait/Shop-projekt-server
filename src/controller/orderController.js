@@ -25,22 +25,30 @@ res.send('New order created .....')
 }
 
 
-// export const postOrders = async (req, res) => {
-//     const data = req.body;
-//     // Testen ob data alle infos enthält: title, artist, year, cover, price
-//     if (!data.recordId || !data.userId || !data.quantite) {
-//         return res.status(400).send('Felende Daten');
-//     }
-    
-//     const order = new orderModel({
-//         recordId: data.recordId,
-//         userId: data.userId,
-//         quantity: data.quantity,
-//     });
+export const getOrdersById=async(req, res) => {
+    const id= req.params.id;
 
-//     await order.save();
+    try{
+        const order = await orderModel.findByIdAndUpdate(id , req.body, {
+            new: true,
+            runValidators: true,
+            context:'query'
 
-//     res.send(order);
-// }
+        });
+        res.json(order)
+    }catch(err){
+        console.log(error);
+    }
+};
 
-
+export const updateOrder= async(req, res) => {
+    try{
+        const id= req.params.id;
+        const order=await orderModel.findByIdAndDelete(id, req.body, {
+            new:true,
+            runValidators: true,
+            context:'query'
+        })
+        res.json(order)
+    }catch(error){console.log(error);}
+}

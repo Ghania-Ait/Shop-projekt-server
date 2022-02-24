@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import {getOrders,postOrders} from '../src/controller/orderController.js'
+import {getOrders,postOrders,getOrdersById} from '../src/controller/orderController.js'
 
 
 const router=new Router();
@@ -7,5 +7,13 @@ const router=new Router();
 router.route('/orders')
 .get(getOrders)
 .post(postOrders);
+
+
+
+
+router.route('/orders/:id')
+.get(getOrdersById)
+.put()
+.delete()
 
 export default router;
