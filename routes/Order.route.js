@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import {getOrders,postOrders,getOrdersById} from '../src/controller/orderController.js'
+import {getOrders,postOrders,getOrdersById,updateOrder,deleteOrder } from '../src/controller/orderController.js'
 
 
 const router=new Router();
@@ -13,7 +13,7 @@ router.route('/orders')
 
 router.route('/orders/:id')
 .get(getOrdersById)
-.put()
-.delete()
+.put(updateOrder)
+.delete(deleteOrder )
 
 export default router;

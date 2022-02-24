@@ -50,5 +50,18 @@ export const updateOrder= async(req, res) => {
             context:'query'
         })
         res.json(order)
-    }catch(error){console.log(error);}
+    }catch(error){
+        console.log(error);
+    }
+}
+
+
+export const deleteOrder =async (req, res) => {
+    const id = req.params.id;
+    try{
+        const order=await orderModel.deleteOne({_id:id});
+        res.json(user)
+    }catch(err){
+        return res.status(400).send('Nicht gefunden mit id: '+id+' - '+err)
+    }
 }
