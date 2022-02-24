@@ -4,14 +4,17 @@ import userRoutes from './routes/users.route.js';
 import orderRoutes from './routes/Order.route.js'
 import cors from 'cors';
 import mongoose from 'mongoose';
-import connectMongoose from './databaseMongoose.js';
-import 'dotenv/config'
+import {connectMongoose, seedTestData} from './databaseMongoose.js';
+import 'dotenv/config';
 
 
 
 
 
 
+if (process.env.SEED_TEST_DATA === 'true') {
+    seedTestData();
+}
 // const mongoadresse = process.env.MONGO ?? 'mongodb://localhost:27107/demo';
 
 // mongoose.connect(mongoadresse);
