@@ -1,10 +1,10 @@
 import {Router} from 'express';
-import {getOrders} from '../src/controller/controller.js'
+import {getOrders,postOrders} from '../src/controller/orderController.js'
 
 
 const router=new Router();
 
-router.get('/orders')
+router.route('/orders')
 .get(getOrders)
 .post(postOrders);
 

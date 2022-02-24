@@ -1,7 +1,7 @@
 import  express  from "express";
 import recordsRoutes from './routes/Records.route.js' ;
 import userRoutes from './routes/users.route.js';
-import orderRoutes from './routes/Records.route.js'
+import orderRoutes from './routes/Order.route.js'
 import cors from 'cors';
 import mongoose from 'mongoose';
 import connectMongoose from './databaseMongoose.js';
@@ -28,7 +28,7 @@ app.use(cors());
 app.use(express.json());
 app.use(recordsRoutes);
 app.use(userRoutes);
-app.use(orderRoutes)
+app.use(orderRoutes);
 
 
 
