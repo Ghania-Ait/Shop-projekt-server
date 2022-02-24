@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import {getRecords,postRecords,getTop10,getRecordById,deleteRecord} from '../src/controller/controller.js';
+import {getRecords,postRecords,getTop10,getRecordById,deleteRecord,updateRecord} from '../src/controller/controller.js';
 
 const router=new Router();
 router.route('/records')
@@ -16,7 +16,7 @@ router.get('/records/top10', getTop10)
 
 router.route('/records/:id')
 .get(getRecordById)
-.put()
+.put(updateRecord)
 .delete(deleteRecord )
 
 export default router;

@@ -58,6 +58,23 @@ export const deleteRecord = async (req, res) => {
 }
 
 
+export  const updateRecord= async (req, res)=> {
+    
+    try {const id= req.params.id;
+        console.log(req.body);
+        
+        const record = await recordModel.findByIdAndUpdate(id , req.body, {
+            new: true,
+            runValidators: true,
+            context: 'query'
+            } );
+        res.json(record);
+        
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 
 
 
